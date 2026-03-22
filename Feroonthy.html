@@ -13,21 +13,70 @@
 <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
 
 <style>
-html, body{
-    margin:0;
-    padding:0;
-    background:#000 !important;
-    color:#999;
-    font-family: 'Alice', serif;
-    scroll-behavior:smooth;
-    direction:rtl;
-    unicode-bidi:embed;
-}
-*{ box-sizing:border-box; }
-:root{ --gold-dark:#b8860b; }
 
-/* ===== navbar ===== */
-.navbar{
+/* ===== hero ===== */
+.hero{
+    padding:150px 20px 60px;
+    text-align:center;
+}
+.hero h1{
+    font-size:70px;
+    color:var(--gold-dark);
+}
+.summary{
+    max-width:700px;
+    margin:auto;
+    font-size:22px;
+    line-height:2;
+    color:#ccc;
+}
+
+/* ===== الفصول ===== */
+.chapter-block{
+    max-width:900px;
+    margin:40px auto;
+    padding:40px;
+    display:none;
+}
+.chapter-title{
+    font-size:28px;
+    color:var(--gold-dark);
+    margin-bottom:25px;
+    text-align:right;
+}
+.chapter-content{
+    line-height:2.3;
+    font-size:19px;
+    text-align:right;
+    white-space:pre-line;
+    color:#ccc;
+}
+
+/* ===== الصور ===== */
+img.lazy {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+img.lazy.show {
+    opacity: 1;
+}
+
+/* ===== footer ===== */
+footer{
+    padding:80px 20px;
+    text-align:center;
+    border-top:1px solid #111;
+}
+footer a{
+    color:var(--gold-dark);
+    text-decoration:none;
+    font-size:26px;
+    font-weight:bold;
+}
+footer a:hover{ color:#daa520; }
+
+</style>
     position:fixed;
     top:0;
     width:100%;
